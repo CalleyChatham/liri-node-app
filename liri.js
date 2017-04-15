@@ -3,7 +3,7 @@
  */
 
 var Twitter = require('twitter');
-var twitterKeys = require(".//keys.js");
+var twitterKeys = require("./keys.js");
 var myTwitter = new Twitter({
     consumer_key: '',
     consumer_secret: '',
@@ -95,13 +95,13 @@ switch (command) {
         break;
 
     case "spotify-this-song":
-        console.log("Looking up your song...");
+        console.log("Checking my record collection...");
 
         spotifyThisSong(input);
         break;
 
     case "movie-this":
-        console.log("Looking up your movie...");
+        console.log("Let me see if I can find that title...");
 
         movieThis(input);
         break;
@@ -135,7 +135,8 @@ switch (command) {
 }
 
 //
-//
+// everything you get from the npm
+
 // request('http://www.google.com', function (error, response, body) {
 //     console.log('error:', error); // Print the error if one occurred
 //     console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
