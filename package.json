@@ -1,0 +1,24 @@
+{
+  "name": "liri-node-app",
+  "version": "1.0.0",
+  "description": "Calley's Homework",
+  "main": "keys.js",
+  "scripts": {
+    "start": "node liri.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CalleyChatham/liri-node-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CalleyChatham/liri-node-app/issues"
+  },
+  "homepage": "https://github.com/CalleyChatham/liri-node-app#readme",
+  "dependencies": {
+    "request": "^2.81.0",
+    "spotify": "^0.3.0",
+    "twitter": "^1.7.0"
+  }
+}

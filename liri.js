@@ -4,11 +4,13 @@
 
 var Twitter = require('twitter');
 var twitterKeys = require("./keys.js");
+var fs = require('fs');
+
 var myTwitter = new Twitter({
-    consumer_key: '',
-    consumer_secret: '',
-    access_token_key: '',
-    access_token_secret: ''
+    consumer_key: twitterKeys.consumer_key,
+    consumer_secret: twitterKeys.consumer_secret,
+    access_token_key: twitterKeys.access_token_key,
+    access_token_secret: twitterKeys.access_token_secret
 });
 
 var spotify = require('spotify');
@@ -24,6 +26,8 @@ for (var i = 3; i < process.argv.length; i++) {
 }
 
 var input = inputArray.join("+");
+
+
 
 function myTweets() {
     myTwitter.get('statuses/user_timeline', {screen_name: 'calleyoneil', count: 20}, function(error, tweets, response) {
